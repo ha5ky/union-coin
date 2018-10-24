@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>联合货币退税系统</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+	<link rel="stylesheet" href="assets/css/my.css">
+	<link rel="stylesheet" href="assets/css/css/build.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+	<script type="text/javascript">
+
+       function aCheck1(){
+       document.getElementById("span1").style.display="block";
+       document.getElementById("span2").style.display="none";
+       document.getElementById("span3").style.display="none";
+       document.getElementById("span4").style.display="block";
+       document.getElementById("span5").style.display="none";
+        document.getElementById("span6").style.display="block";
+       }
+      function bCheck2(){ 
+      document.getElementById("span1").style.display="none";  
+      document.getElementById("span2").style.display="block";
+      document.getElementById("span3").style.display="none";
+      document.getElementById("span4").style.display="none";
+      document.getElementById("span5").style.display="block"; 
+      document.getElementById("span6").style.display="none";
+      
+      }
+      function bCheck3(){ 
+      document.getElementById("span1").style.display="none";  
+      document.getElementById("span2").style.display="none";
+      document.getElementById("span3").style.display="block"; 
+      document.getElementById("span4").style.display="none";
+      document.getElementById("span5").style.display="block"; 
+      document.getElementById("span6").style.display="none";
+     
+}
+
+</script>
+<style type="text/css">
+.report-file {
+            display: block;
+            position: relative;
+             width:84px;
+            height:15px;
+            overflow: hidden;
+            border: 1px solid #FFFFFF;
+            background: none repeat scroll 0 0 #FFFFFF;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            float: left;
+            margin-right:5px;
+ }
+ .report-file span {
+            cursor: pointer;
+            display: block;
+            line-height: 14px;
+  }
+ .file-prew {
+            position: absolute;
+            top: 0;
+            left:0;
+           
+           
+            opacity: 0; 
+            filter: alpha(opacity=0);
+            cursor: pointer;
+            width:84px;
+            height:15px;
+ }
+</style>
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="navbar-btn center-block">
+					<button type="button" class="btn-toggle-fullwidth "><i class="fa fa-bars center-block"></i></button>
+				</div>
+			</div>
+			<div class="brand">
+				<a href="index.html"><img src="assets/img/logo1.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+				
+				<div class="navbar-form navbar-left">
+					<!-- <div class="input-group"> -->
+						<!-- <input type="text" value="" class="form-control" placeholder="北京"> -->
+						<h4>北京首都机场T3E国际出发店</h4>
+						<!-- </div> -->
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> </a>
+
+							</li>
+							<li class="dropdown">
+								<a href="#"><i class="glyphicon glyphicon-off"></i><span>退出</span> </a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar" style="box-shadow: 2px 0px 5px 2px #dedada">
+				<div class="sidebar-scroll">
+					<nav>
+						<ul class="nav">
+							<li>
+								<a href="#myyibiao" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>我的仪表盘</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="myyibiao" class="collapse in">
+									<ul class="nav">
+										<li><a href="page-no.html">待办事项</a></li>
+										<li><a href="page-yes.html" class="">已办事项</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#drawback" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>退税业务</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="drawback" class="collapse in">
+									<ul class="nav">
+										<li><a href="TaxRefund-Salesman-Auth.html" class="active">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#myreport" data-toggle="collapse" class="collapsed"><i class="fa fa-pie-chart"></i> <span>我的报表</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="myreport" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-exclamation-circle"></i> <span>运营监控</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="drawback.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-dollar"></i> <span>财务管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-users"></i> <span>合作机构</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-cog fa-fw"></i> <span>系统管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content">
+					<div class="container-fluid">
+						
+						<h2 class="page-title">办理退税</h2>
+					<div class="col-md-4">
+						<h3 class="panel-title" style="color:black;">退税信息</h3> 
+						<br>
+				
+						<div class="panel-body" style="margin-left: 0px;">
+							<form class="">
+								<div class="row" style="padding-right:10px;">
+									<h6 class="panel-title" style="font-size:13px;margin-bottom: 5px;">退税信息</h6> 
+									<input type="radio" name="RadioGroup1" value="ok1" id="ok1" checked="checked" onclick="aCheck1()" style="margin-right:3px;" /> 现场退税 &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" name="RadioGroup1" value="ok2" id="ok2" onclick="bCheck2()" style="margin-right:3px;" /> 授权退税 &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="radio" name="RadioGroup1" value="ok3" id="ok3" onclick="bCheck3()" style="margin-right:3px;" /> 邮寄退税
+								</div>
+							     <span id="span1" style="display:block">
+								<div>
+									<div class="row">
+										<div class="input-field" style="margin-bottom: 50px;">
+											<label class="tran"  style="font-size:12px;color:#919191;">退税公司</label>
+											<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:right;width:450px;margin-top: 7px;border:0;">退税公司:
+												 <option>请选择</option>
+                                               <option>北京中软国际</option>
+                                                <option>北京联合货币</option>
+                                                <option>北京商城</option>
+                                                <option>国际贸易货币</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+											<div class="input-field" style="margin-bottom: 50px;">
+											<label class="tran"  style="font-size:12px;color:#919191;">退税国家</label>
+											<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:right;width:450px;margin-top: 7px;border:0;">退税国家:
+												 <option>请选择</option>
+                                               <option>中国</option>
+                                                <option>埃及</option>
+                                                <option>日本</option>
+                                                <option>美国</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="input-field">
+											<input id="tel" type="text" class="validate" >
+											<label for="tel" class="tran" id="tellabel" style="font-size:12px;color:#919191;">退税单号</label>
+										</div>
+									</div>
+											<div class="row">
+										<div class="input-field">
+											<input id="accountname" type="text" class="validate" >
+											<label for="accountname" id="accountnamelabel" class="tran" style="font-size:12px;color:#919191;">购买金额</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="bank" type="text" class="validate" >
+											<label for="bank" id="banklabel" class="tran" style="font-size:12px;color:#919191;">退税金额</label>
+										</div>
+									</div>
+									<div class="row">
+											<div class="input-field" style="margin-bottom: 20px;">
+											<label for="passport" id="passportlabel" class="tran"  style="font-size:12px;color:#919191;">优惠活动</label>
+											<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:right;width:450px;margin-top: 7px;border:0;">优惠活动:
+											<option>请选择</option>
+                                               <option>打折</option>
+                                                <option>汇率上升</option>
+                                                <option>活动优惠</option>
+                                          
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field" style="margin-bottom: 20px;">
+											<input id="client_name" type="text" class="validate" >
+											<label for="client_name" id="client_namelabel" class="tran" style="font-size:12px;color:#919191;" >手续费</label>
+										</div>
+									</div>
+								
+											<div class="row">
+											<div class="input-field" style="margin-bottom: 50px;">
+											<label class="tran"  style="font-size:12px;color:#919191;">优惠金额</label>
+											<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:right;width:450px;margin-top: 6px;border:0;">优惠金额:
+											<option>请选择</option>
+                                               <option>100</option>
+                                                <option>200</option>
+                                                <option>300</option>
+                                          
+											</select>
+										</div>
+									</div>
+										<div class="row">
+										<div class="input-field">
+											<input id="account" type="text" class="validate" >
+											<label for="account" class="tran" id="accountlabel" style="font-size:12px;color:#919191;padding-left: 0;">应退税金额</label>
+										</div>
+									</div>
+											<div class="row">
+											<div class="input-field" style="margin-bottom: 20px;">
+											<labelclass="tran"  style="font-size:12px;color:#919191;">收款方式</label>
+											<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:right;width:450px;margin-top: 3px;border:0;">收款方式:
+											<option>请选择</option>
+                                               <option>现金</option>
+                                                <option>银行卡</option>
+                                                <option>跨行转账</option>
+                                          
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<div class="report-file">
+                                                <span style="font-size: 10px;color:#757575;">上传退税资料</span>
+                                              <input tabindex="3" size="3" name="report" class="file-prew" type="file" style="background-color: #E0E0E0;">
+                                                </div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="bank" type="hidden" class="validate" >
+											<label for="" class="">备注</label>
+										</div>
+									</div>
+								</div>
+
+							</span>
+							<span id="span2" style="display:none">
+								<div>
+									<div class="row">
+										<div class="input-field" style="margin-bottom: 50px;">
+											<label for="passport" id="passportlabel" class="tran"  style="font-size:12px;color:#919191;">退税公司</label>
+											<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:right;width:450px;margin-top: 7px;border:0;">退税公司:
+												 <option>请选择</option>
+                                               <option>北京中软国际</option>
+                                                <option>北京联合货币</option>
+                                                <option>北京商城</option>
+                                                <option>国际贸易货币</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="client_name2" type="text" class="validate" >
+											<label for="client_name" id="client_namelabel2" class="tran" style="font-size:12px;color:#919191;" >退税单号</label>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="input-field">
+											<input id="tel2" type="text" class="validate" >
+											<label for="tel" class="tran" id="tellabel2" style="font-size:12px;color:#919191;">关联单号</label>
+										</div>
+									</div>
+											<div class="row">
+										<div class="input-field">
+											<input id="accountname2" type="text" class="validate" >
+											<label for="accountname" id="accountnamelabel2" class="tran" style="font-size:12px;color:#919191;">授权原因</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="bank2" type="text" class="validate" >
+											<label for="bank" id="banklabel2" class="tran" style="font-size:12px;color:#919191;">购票小号数量</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="account2" type="text" class="validate" >
+											<label for="account" class="tran" id="accountlabel2" style="font-size:12px;color:#919191;">备注</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="bank" type="hidden" class="validate" >
+											<label for="" class="">退税资料</label>
+										</div>
+									</div>
+								</div>
+                               </span>
+                               <span id="span3" style="display:none">
+								<div>
+									<div class="row">
+										<div class="input-field" style="margin-bottom: 50px;">
+											<label for="passport" id="passportlabel" class="tran"  style="font-size:12px;color:#919191;">退税公司</label>
+											<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:right;width:450px;margin-top: 7px;border:0;">退税公司:
+												 <option>请选择</option>
+                                               <option>北京中软国际</option>
+                                                <option>北京联合货币</option>
+                                                <option>北京商城</option>
+                                                <option>国际贸易货币</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="client_name" type="text" class="validate" >
+											<label for="client_name" id="client_namelabel" class="tran" style="font-size:12px;color:#919191;" >退税单号</label>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="input-field">
+											<input id="tel" type="text" class="validate" >
+											<label for="tel" class="tran" id="tellabel" style="font-size:12px;color:#919191;">关联单号</label>
+										</div>
+									</div>
+							
+									<div class="row">
+										<div class="input-field">
+											<input id="bank" type="text" class="validate" >
+											<label for="bank" id="banklabel" class="tran" style="font-size:12px;color:#919191;">购票小号数量</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="account" type="text" class="validate" >
+											<label for="account" class="tran" id="accountlabel" style="font-size:12px;color:#919191;">备注</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="bank" type="hidden" class="validate" >
+											<label for="" class="">退税资料</label>
+										</div>
+									</div>
+								</div>
+								
+							</span>
+						</form>
+					</div>
+				</div>
+			 	
+			 <div class="col-md-2">
+                <span id="span6" style="display:block;margin-top: 300px;">
+                  
+	           
+                  <h3 class="panel-title" style="color:black;margin-bottom: 10px;">现金总计应退税金额</h3> 
+				  
+				 <h3 class="panel-title" style="color:#FFFF00;font-size: 20px;">2970￥</h3> 
+				<br>
+                 
+                 
+                 <h3 class="panel-title" style="color:black;margin-bottom: 10px;">现金总计应退税金额</h3> 
+				
+				 <h3 class="panel-title" style="color:#FFFF00;font-size: 20px;">2970￥</h3> 
+				<br>
+                
+                
+
+	            </span>
+			</div>
+		    
+					<div class="col-md-4">
+						<div class="bian" style="border-bottom: #919191 solid 3px;">
+							<h3 class="panel-title" style="color:black;font-size: 12px;">当前用户</h3>
+							<br>
+					        <h3 class="panel-title" style="color:#919191;">王利民(代办)</h3>
+					       <br>
+					      
+					       <h3 class="panel-title" style="color:#919191;margin-bottom: 3px;">护照号：G325286591</h3>
+					       <h3 class="panel-title" style="color:#919191;margin-bottom: 3px;">收款人：王小二</h3>
+					       <h3 class="panel-title" style="color:#919191;margin-bottom: 3px;">银行账户：119992830981923</h3>
+					       <h3 class="panel-title" style="color:#919191;margin-bottom: 12px;">开户行：招商银行北京丰台科技园区分行</h3>
+					   </div>
+                     <span id="span4" style="display:block">
+                     	   <div class="bottom" style="margin-top: 20px;">
+					   	 <h3 class="panel-title" style="color:black;margin-bottom: 2px;">#324876573342432342-<span style="color: blue;">$1,420</span></h3>
+					   	  <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">现场退税，斯洛文尼亚</h3>
+					   	   <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">GTF&nbsp;&nbsp;&nbsp;<span style="color:blue">转账</span></h3>
+					   </div>
+					      <div class="bottom" style="margin-top: 20px;">
+					   	 <h3 class="panel-title" style="color:black;margin-bottom: 2px;">#324876573342432342-$2843</h3>
+					   	  <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">现场退税，拉脱维亚</h3>
+					   	   <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">TAX REFUND&nbsp;现金</h3>
+					   </div>
+					      <div class="bottom" style="margin-top:20px;">
+					   	 <h3 class="panel-title" style="color:black;margin-bottom: 2px;">#324876573342432342-$984</h3>
+					   	  <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">现场退税，蒙特内哥罗</h3>
+					   	   <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">KICC&nbsp;&nbsp;<span style="color:red">信用卡</span></h3>
+					   </div>
+					  
+					</span>
+			<span id="span5" style="display:none;">
+					 <div class="bottom" style="margin-top: 20px;">
+					   	 <h3 class="panel-title" style="color:black;margin-bottom: 2px;">#324876573342432342</h3>
+					   	  <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">授权退税</h3>
+					   	   <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">GTF</h3>
+					   </div>
+					      <div class="bottom" style="margin-top: 20px;">
+					   	 <h3 class="panel-title" style="color:black;margin-bottom: 2px;">#324876573342432342</h3>
+					   	  <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">授权退税</h3>
+					   	   <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">TAX REFUND</h3>
+					   </div>
+					      <div class="bottom" style="margin-top:20px;">
+					   	 <h3 class="panel-title" style="color:black;margin-bottom: 2px;">#324876573342432342-$984</h3>
+					   	  <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">授权退税</h3>
+					   	   <h3 class="panel-title" style="color:#919191;margin-bottom: 2px;">KICC</h3>
+					   </div>
+					</span>
+					   <button type="button" class="btn btn-primary" style="background-color: #171C61;width: 520px;margin-top: 20px;" >确认打印</button>
+						</div>
+					</div>
+					 <button type="button" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;margin-top: 120px;margin-top:120px;margin-left:600px;" >添加</button>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+
+
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+			<footer>
+       
+			</footer>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="assets/scripts/klorofil-common.js"></script>
+		<script src="assets/scripts/my.js"></script>
+	</body>
+
+	</html>

@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>联合货币退税系统</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+	<link rel="stylesheet" href="assets/css/my.css">
+	<link rel="stylesheet" href="assets/css/css/build.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="navbar-btn center-block">
+					<button type="button" class="btn-toggle-fullwidth "><i class="fa fa-bars center-block"></i></button>
+				</div>
+			</div>
+			<div class="brand">
+				<a href="index.html"><img src="assets/img/logo1.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+				
+				<div class="navbar-form navbar-left">
+					<!-- <div class="input-group"> -->
+						<!-- <input type="text" value="" class="form-control" placeholder="北京"> -->
+						<h4>北京首都机场T3E国际出发店</h4>
+						<!-- </div> -->
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> </a>
+
+							</li>
+							<li class="dropdown">
+								<a href="#"><i class="glyphicon glyphicon-off"></i><span>退出</span> </a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar" style="box-shadow: 2px 0px 5px 2px #dedada">
+				<div class="sidebar-scroll">
+					<nav>
+						<ul class="nav">
+							<li>
+								<a href="#myyibiao" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>我的仪表盘</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="myyibiao" class="collapse in">
+									<ul class="nav">
+										<li><a href="drawback.html" class="">待办事项</a></li>
+										<li><a href="page-login.html" class="active">已办事项</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#drawback" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>退税业务</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="drawback" class="collapse">
+									<ul class="nav">
+										<li><a href="drawback.html">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#myreport" data-toggle="collapse" class="collapsed"><i class="fa fa-pie-chart"></i> <span>我的报表</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="myreport" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-exclamation-circle"></i> <span>运营监控</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse">
+									<ul class="nav">
+										<li><a href="drawback.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-dollar"></i> <span>财务管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-users"></i> <span>合作机构</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-cog fa-fw"></i> <span>系统管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content">
+					<div class="container-fluid">
+						
+						<h2 class="page-title">已办事项</h2>
+						<div style="width:370px;height:40px;float: left;">
+							<h3 class="panel-title" style="font-size: 13px;float: left;height:40px;line-height: 40px;color: #000000">起始日期<span>:</span></h3> 
+							<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:left;width:100px;height:40px;">
+					                <option>2018</option>
+                                    <option>2017</option>
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                    <option>2014</option>
+						      </select>
+						      	<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:left;height:40px;width:100px;margin-left: 0px;">
+					                <option>12</option>
+                                    <option>11</option>
+                                    <option>10</option>
+                                    <option>09</option>
+                                    <option>08</option>
+                                    <option>07</option>
+                                    <option>06</option>
+                                    <option>05</option>
+                                    <option>04</option>
+                                    <option>03</option>
+                                    <option>02</option>
+                                    <option>01</option>
+						      </select>
+						      <select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:left;width:100px;height:40px;margin-left: 0px;">
+					                <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+						      </select>
+						</div>
+				<div style="width:370px;height:40px;float: left;margin-left: 30px;">
+							<h3 class="panel-title" style="font-size: 13px;float: left;height:40px;line-height: 40px;color: #000000">截止日期<span>:</span></h3> 
+							<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:left;width:100px;height:40px;">
+					                <option>2018</option>
+                                    <option>2017</option>
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                    <option>2014</option>
+						      </select>
+						      	<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:left;height:40px;width:100px;margin-left: 0px;">
+					                <option>12</option>
+                                    <option>11</option>
+                                    <option>10</option>
+                                    <option>09</option>
+                                    <option>08</option>
+                                    <option>07</option>
+                                    <option>06</option>
+                                    <option>05</option>
+                                    <option>04</option>
+                                    <option>03</option>
+                                    <option>02</option>
+                                    <option>01</option>
+						      </select>
+						      <select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:left;width:100px;height:40px;margin-left: 0px;">
+					                <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+						      </select>
+						</div>
+
+                     <button class="btn butpurple" style="float: left;margin-left: 30px;">查询</button>
+					</div>
+
+                 <div class="tablefull" style="margin-top: 40px;width: 75%;margin-left: 20px;">
+					<div class="table-responsive tableunion">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th class="text-center">序号</th>
+											<th class="text-center">退税单号</th>
+											<th class="text-center">退税类型</th>
+											<th class="text-center">退税公司</th>
+											<th class="text-center">状态</th>
+											<th class="text-center">处理时间</th>
+											<th class="text-center">操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>324876573342432342</td>
+											<td>现场退税</td>
+											<td>GTF</td>
+											<td>正在审批</td>
+											<td>2018-3-20&nbsp;12:21</td>
+											<td style="color:#4D5186; ">查看</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>384876573342438905</td>
+											<td>授权退税</td>
+											<td>GTF</td>
+											<td>付款审批</td>
+											<td>2018-3-20&nbsp;12:32</td>
+											<td style="color:#4D5186; ">查看</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>384876573342431283</td>
+											<td>授权退税</td>
+											<td>GTF</td>
+											<td>审批失败</td>
+											<td>2018-3-20&nbsp;12:39</td>
+											<td style="color:#4D5186; ">查看</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>384876573342431203</td>
+											<td>授权退税</td>
+											<td>GTF</td>
+											<td>正在审批</td>
+											<td>2018-3-20&nbsp;12:09</td>
+											<td style="color:#4D5186; ">查看</td>
+										</tr>
+									</tbody>
+								</table>
+							
+							</div>
+						</div>
+						<center>
+                    	<div class="center-block" style="margin-top: 400px;">
+									<button class="btn butpurple" style="margin-right: 15px;">上一页</button>
+									<button class="btn butpurple">下一页</button>
+					</div>
+					</center>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+			
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="assets/scripts/klorofil-common.js"></script>
+		<script src="assets/scripts/my.js"></script>
+
+	</body>
+
+	</html>

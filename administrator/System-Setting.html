@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>联合货币退税系统</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link rel="stylesheet" href="../assets/css/my.css">
+	<link rel="stylesheet" href="../assets/css/css/build.css">
+	<link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
+	<!-- GOOGLE FONTS -->
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon.png">
+
+	<script src="../assets/vendor/jquery/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("#details").click(function(){
+				$("#showdetails").css('display','');
+				$("#showprocess").css('display','none');
+				$(this).attr('class','bgactive');
+				$("#process").attr('class',' ');
+			});
+			$("#process").click(function(){
+				$("#showprocess").css('display','');
+				$("#showdetails").css('display','none');
+				$(this).attr('class','bgactive');
+				$("#details").attr('class',' ');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="navbar-btn center-block">
+					<button type="button" class="btn-toggle-fullwidth "><i class="fa fa-bars center-block"></i></button>
+				</div>
+			</div>
+			<div class="brand">
+				<a href="index.html"><img src="../assets/img/logo1.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+
+				<div class="navbar-form navbar-left">
+					<h4>公司财务部</h4>
+				</div>
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> </a>
+
+						</li>
+						<li class="dropdown">
+							<a href="#"><i class="glyphicon glyphicon-off"></i><span>退出</span> </a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar" style="box-shadow: 2px 0px 5px 2px #dedada">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav">
+						<li>
+							<a href="#dashboard" data-toggle="collapse" class="collapsed"><i class="glyphicon glyphicon-th-large"></i> <span>我的仪表盘</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="dashboard" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" >待办事项</a></li>
+									<li><a href="page-login.html" class="">已办事项</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#drawback" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>退税业务</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="drawback" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#myreport" data-toggle="collapse" class="collapsed"><i class="fa fa-pie-chart"></i> <span>我的报表</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="myreport" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-exclamation-circle"></i> <span>运营监控</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="drawback.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-dollar"></i> <span>财务管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-users"></i> <span>合作机构</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-cog fa-fw"></i> <span>系统管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+		<!-- MAIN -->
+		
+		<div style="position:absolute;left:20%;top:15%;">
+			<div style="font-size:18px;margin-bottom:30px;color:#000;">
+				<span>用户管理</span>
+			</div>
+			<div class="col-md-12" style="border:1px solid #ebebeb;">
+				<!-- left -->
+				<div class="pull-left col-md-4" style="margin-top:30px;">
+					<div style="text-align:center;margin-bottom:30px;color:#000;">
+						<span>组织架构</span>
+					</div>
+					<ul class="nav">
+						<li>
+							<a href="#system-setting" data-toggle="collapse" class="collapsed"><i class="glyphicon glyphicon-th-large"></i> <span>联合货币退税系统</span></a>
+							<div id="system-setting" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" >公司领导</a></li>
+									<li><a href="#" >公司退税部</a></li>
+									<li><a href="#" >公司财务部</a></li>
+									<li><a href="#" >公司客服</a></li>
+									<li><a href="#" >北京首都机场T3E国际出发店</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- left END -->
+				<div class="pull-right col-md-8" style="border-left:1px solid #ebebeb;margin-top:30px;">
+					<div class="pull-right col-md-6" style=" margin-bottom:30px;">
+						<button class="btn butpurple" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">添加</button>
+						<button class="btn butpurple" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">修改</button>
+						<button class="btn butpurple" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">删除</button>
+					</div>
+					<table class="table table-striped">
+						<tr>
+							<td></td>
+							<td>姓名</td>
+							<td>职务</td>
+							<td>电话号码</td>
+							<td>邮箱</td>
+							<td>权限</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="checkbox checkbox-primary" style="margin-bottom: 0px;margin-top: 0px;">
+									<input id="checkbox2" class="styled" type="checkbox" checked>
+									<label for="checkbox2">
+
+									</label>
+								</div>
+							</td>
+							<td>张文天</td>
+							<td>店长</td>
+							<td>15819671152</td>
+							<td>15819671152@163.com</td>
+							<td>部门审批</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="checkbox checkbox-primary" style="margin-bottom: 0px;margin-top: 0px;">
+									<input id="checkbox2" class="styled" type="checkbox" checked>
+									<label for="checkbox2">
+
+									</label>
+								</div>
+							</td>
+							<td>张文天</td>
+							<td>店长</td>
+							<td>15819671152</td>
+							<td>15819671152@163.com</td>
+							<td>部门审批</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="checkbox checkbox-primary" style="margin-bottom: 0px;margin-top: 0px;">
+									<input id="checkbox2" class="styled" type="checkbox" checked>
+									<label for="checkbox2">
+
+									</label>
+								</div>
+							</td>
+							<td>张文天</td>
+							<td>店长</td>
+							<td>15819671152</td>
+							<td>15819671152@163.com</td>
+							<td>部门审批</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- END MAIN -->
+		<div class="clearfix"></div>
+		<footer>
+		</footer>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script type="text/javascript" src="../assets/scripts/jquery-ui.min.js"></script>
+		<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="../assets/scripts/klorofil-common.js"></script>
+		<script src="../assets/scripts/my.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#modalDialog").draggable({
+					handle: '.myModal-header'
+				});
+			});
+		</script>
+	</body>
+
+	</html>

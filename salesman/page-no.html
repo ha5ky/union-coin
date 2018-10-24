@@ -1,0 +1,1105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>联合货币退税系统</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+	<link rel="stylesheet" href="assets/css/my.css">
+	<link rel="stylesheet" href="assets/css/css/build.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+
+	<script type="text/javascript">
+
+
+     function aCheck4(){
+     document.getElementById("fail").style.display="block";
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("success").style.display="none";
+     document.getElementById("write").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+      document.getElementById("successok").style.display="none";
+      document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+
+     }
+     function aCheck5(){ 
+     document.getElementById("success").style.display="block";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="none";
+     document.getElementById("write").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+     
+       document.getElementById("liucheng").style.display="none";
+        document.getElementById("successok").style.display="none";
+        document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+     }
+    function bCheck6(){ 
+     
+     document.getElementById("we1").style.display="block";
+     document.getElementById("we2").style.display="block";
+     document.getElementById("fail").style.display="none";  
+     document.getElementById("success").style.display="none";
+     document.getElementById("write").style.display="none"; 
+     document.getElementById("liucheng").style.display="none"; 
+      document.getElementById("successok").style.display="none";
+      document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+     }
+       function bCheck7(){ 
+   
+     document.getElementById("we1").style.display="block";
+     document.getElementById("we2").style.display="block";
+     document.getElementById("success").style.display="none"; 
+     document.getElementById("fail").style.display="none";
+     document.getElementById("write").style.display="none"; 
+     document.getElementById("liucheng").style.display="none";
+      document.getElementById("successok").style.display="none";
+      document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+     }
+     function failwrite(){
+     document.getElementById("success").style.display="none";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="none";
+     document.getElementById("write").style.display="block";
+     document.getElementById("liucheng").style.display="none";
+     document.getElementById("al").style.display="block";
+     document.getElementById("tab").style.display="block";
+     document.getElementById("liucheng").style.display="none";
+      document.getElementById("successok").style.display="none";
+      document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+     }
+     function writego(){
+     document.getElementById("success").style.display="none";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="block";
+     document.getElementById("write").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+     document.getElementById("al").style.display="none";
+     document.getElementById("tab").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+      document.getElementById("successok").style.display="none";
+      document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+     }
+
+    function checkcolor1(){
+     document.getElementById("color1").style.background="#171C61"; 
+     document.getElementById("color2").style.background="white"; 
+     document.getElementById("color1").style.color="white"; 
+     document.getElementById("color2").style.color="black"; 
+     document.getElementById("success").style.display="none";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="none";
+     
+     document.getElementById("al").style.display="block";
+     document.getElementById("tab").style.display="block";
+     document.getElementById("liucheng").style.display="none";
+      document.getElementById("successok").style.display="none";
+      document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+}
+    function checkcolor2(){ 
+     document.getElementById("color1").style.background="white"; 
+     document.getElementById("color2").style.background="#171C61"; 
+     document.getElementById("color1").style.color="black"; 
+     document.getElementById("color2").style.color="white"; 
+     document.getElementById("success").style.display="none"; 
+     document.getElementById("success").style.display="none";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="none";
+     
+     document.getElementById("al").style.display="block";
+     document.getElementById("tab").style.display="none";
+     document.getElementById("liucheng").style.display="block";
+      document.getElementById("successok").style.display="none";
+      document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+}
+
+
+     function aCheck8(){ 
+     document.getElementById("success").style.display="none";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="none";
+     document.getElementById("write").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+     document.getElementById("successok").style.display="block";
+     document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+
+
+     }
+
+     function sucw(){
+
+     document.getElementById("success").style.display="none";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="none";
+     document.getElementById("write").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+     document.getElementById("al").style.display="none";
+     document.getElementById("tab").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+     document.getElementById("successok").style.display="none";
+     document.getElementById("writeok").style.display="block";
+     document.getElementById("alok").style.display="block";
+     document.getElementById("tabok").style.display="block";
+
+
+     }
+
+    function writegook(){
+     document.getElementById("success").style.display="none";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="none";
+     document.getElementById("write").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+     document.getElementById("al").style.display="none";
+     document.getElementById("tab").style.display="none";
+     document.getElementById("liucheng").style.display="none";
+      document.getElementById("successok").style.display="block";
+      document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="none";
+     }
+
+       function checkcolor1ok(){
+     document.getElementById("color3").style.background="#171C61"; 
+     document.getElementById("color4").style.background="white"; 
+     document.getElementById("color3").style.color="white"; 
+     document.getElementById("color4").style.color="black"; 
+     document.getElementById("success").style.display="none";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="none";
+     
+     document.getElementById("al").style.display="block";
+     document.getElementById("tab").style.display="block";
+     document.getElementById("liucheng").style.display="none";
+      document.getElementById("successok").style.display="none";
+      document.getElementById("tabok").style.display="block";
+     document.getElementById("alok").style.display="block";
+      document.getElementById("liuchengok").style.display="none";
+}
+    function checkcolor2ok(){ 
+     document.getElementById("color3").style.background="white"; 
+     document.getElementById("color4").style.background="#171C61"; 
+     document.getElementById("color3").style.color="black"; 
+     document.getElementById("color4").style.color="white"; 
+     document.getElementById("success").style.display="none"; 
+     document.getElementById("success").style.display="none";  
+     document.getElementById("we1").style.display="none";
+     document.getElementById("we2").style.display="none";
+     document.getElementById("fail").style.display="none";
+     
+     document.getElementById("al").style.display="block";
+     document.getElementById("tab").style.display="none";
+     document.getElementById("liucheng").style.display="block";
+      document.getElementById("successok").style.display="none";
+      document.getElementById("tabok").style.display="none";
+     document.getElementById("alok").style.display="block";
+      document.getElementById("liuchengok").style.display="block";
+}
+</script>
+
+
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="navbar-btn center-block">
+					<button type="button" class="btn-toggle-fullwidth "><i class="fa fa-bars center-block"></i></button>
+				</div>
+			</div>
+			<div class="brand">
+				<a href="index.html"><img src="assets/img/logo1.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+				
+				<div class="navbar-form navbar-left">
+					<!-- <div class="input-group"> -->
+						<!-- <input type="text" value="" class="form-control" placeholder="北京"> -->
+						<h4>北京首都机场T3E国际出发店</h4>
+						<!-- </div> -->
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> </a>
+
+							</li>
+							<li class="dropdown">
+								<a href="#"><i class="glyphicon glyphicon-off"></i><span>退出</span> </a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar" style="box-shadow: 2px 0px 5px 2px #dedada">
+				<div class="sidebar-scroll">
+					<nav>
+						<ul class="nav">
+							<li>
+								<a href="#myyibiao" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>我的仪表盘</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="myyibiao" class="collapse in">
+									<ul class="nav">
+										<li><a href="drawback.html" class="active">待办事项</a></li>
+										<li><a href="page-login.html" class="">已办事项</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#drawback" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>退税业务</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="drawback" class="collapse">
+									<ul class="nav">
+										<li><a href="drawback.html">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#myreport" data-toggle="collapse" class="collapsed"><i class="fa fa-pie-chart"></i> <span>我的报表</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="myreport" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-exclamation-circle"></i> <span>运营监控</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse">
+									<ul class="nav">
+										<li><a href="drawback.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-dollar"></i> <span>财务管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-users"></i> <span>合作机构</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-cog fa-fw"></i> <span>系统管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content">
+					<div class="container-fluid">
+						
+						<h2 class="page-title">待办事项</h2>
+						<div  id="we1" style="width:146px; ">
+							<h3 class="panel-title" style="font-size: 13px;float: left;">审批状态<span>:</span></h3> 
+							<select for="passport" id="passportlabel" class="validate"  style="font-size:12px;color:#919191;float:right;width:82px;">审批状态
+					                <option>全部</option>
+                                    <option>审批成功</option>
+                                    <option>付款失败</option>
+                                    <option>审批失败</option>
+                                    <option>完善订单</option>
+						      </select>
+						</div>
+				
+					</div>
+             <div id="we2">
+                 <div class="tablefull" style="margin-top: 40px;width: 65%;margin-left: 20px;">
+					<div class="table-responsive tableunion">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th class="text-center">序号</th>
+											<th class="text-center">退税单号</th>
+											<th class="text-center">退税类型</th>
+											<th class="text-center">退税公司</th>
+											<th class="text-center">状态</th>
+											<th class="text-center">操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>324876573342432342</td>
+											<td>现场退税</td>
+											<td>GTF</td>
+											<td style="color: #FE3A3A;">付款失败</td>
+											<td id="ok5" onclick="aCheck4()"style="color:#4D5186;" >处理</td>
+										</tr>
+									     <tr>
+											<td>2</td>
+											<td>384876573342438905</td>
+											<td>授权退税</td>
+											<td>GTF</td>
+											<td>审批成功</td>
+											<td id="ok6" onclick="aCheck5()"style="color:#4D5186;" >处理</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>384876573342431283</td>
+											<td>授权退税</td>
+											<td>GTF</td>
+											<td style="color: #FE3A3A;">审批失败</td>
+											<td style="color:#4D5186; ">处理</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>384876573342431203</td>
+											<td>授权退税</td>
+											<td>GTF</td>
+											<td>完善订单</td>
+											<td id="ok7" onclick="aCheck8()"style="color:#4D5186;">处理</td>
+										</tr>
+									</tbody>
+								</table>
+							
+							</div>
+						</div>
+						<center>
+                    	<div class="center-block" style="margin-top: 400px;">
+									<button class="btn butpurple" style="margin-right: 15px;">上一页</button>
+									<button class="btn butpurple">下一页</button>
+					</div>
+					</center>
+                
+            </div>
+
+            <div id="fail" style="display: none;">
+         		        <div class="titleq" style="width: 750px;margin-bottom: 35px;">
+
+						<h3 class="panel-title" style="font-size: 16px;width: 750px;margin-left: 10px;">我的仪表盘>待办事项><span style="color: blue;">订单处理</span>
+						 <button type="button" id="paper12" onclick="bCheck6()"class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;float: right;" >返回</button></h3> 
+                       </div>
+
+						<div class="col-md-6">
+							<br>
+							<h3 class="panel-title">#324876573342432342-王利民（待办）</h3> 
+							<br>
+							<h3 class="panel-title" style="color: black;">当前状态：付款失败</h3> 
+							<br>
+							<br>
+						<div class="leftarea" style="float: left;margin-right: 20px;">
+							<h3 class="panel-title" style="color: black;">客户信息</h3>
+							<br>
+							<h3 class="panel-title">客户姓名：王晓明</h3> 
+							<br>
+							<h3 class="panel-title">护照号：G35286591</h3> 
+							<br>
+							<h3 class="panel-title">办理类型：代办</h3> 
+							<br>
+							<div>
+                            <h3 class="panel-title">代办人材料
+                               </h3> 
+                            
+                            	<img src="assets/img/search.png" style="width: 30px;height: 30px;">
+                              <img src="assets/img/search.png" style="width: 30px;height: 30px;float: left;">
+                                <img src="assets/img/search.png" style="width: 30px;height: 30px;float: left;">
+                          </div>
+                            
+                            <h3 class="panel-title">账户名：王小二</h3> 
+                            <br>
+                            <h3 class="panel-title">账号：119992830981923</h3> 
+                            <br>
+                            <h3 class="panel-title">开户行：掌上银行北京丰台科技园区支行</h3> 
+                            <br>
+                          </div>
+                        <div class="rightarea">
+							<h3 class="panel-title" style="color: black;">订单信息</h3>
+							<br>
+							<h3 class="panel-title" style="height: 30px;">退税单号：#324876573342432342&nbsp;&nbsp;<span style="color: blue;font-weight: bold;">详细</span></h3> 
+							
+							<h3 class="panel-title" style="height: 30px;">退税单号：#324876573342439856&nbsp;&nbsp;<span style="color: blue;font-weight: bold;">详细</span></h3> 
+							
+							<h3 class="panel-title" style="height: 30px;">退税单号：#324876573342430391&nbsp;&nbsp;<span style="color: blue;font-weight: bold;">详细</span></h3> 
+						
+                            <h3 class="panel-title" style="height: 30px;">退税单号：#324876573342430913&nbsp;&nbsp;<span style="color: blue;font-weight: bold;">详细</span></h3>  
+                           
+                            <h3 class="panel-title" style="height: 30px;">类别：授权退税</h3> 
+                           
+                            <h3 class="panel-title" style="height: 30px;">退税公司：GTF
+                              <img src="assets/img/search.png" style="width: 30px;height: 30px;margin-left: 70px;"></h3> 
+                              <br>
+
+                           
+                            <h3 class="panel-title" style="height: 30px;">购买金额：5000</h3> 
+                           
+                              <h3 class="panel-title" style="height: 30px;">退税金额：1823</h3> 
+                            
+                              <h3 class="panel-title" style="height: 30px;">手续费：23</h3> 
+                           
+                         </div>
+
+                      	<div class="footerbutton" >
+					 <button type="button" id="failwrite" onclick="failwrite()" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;margin-top: 30px;margin-left:150px;float: left;" >编辑</button>
+	            
+	                 </div>
+						</div>
+						<div class="col-md-3">
+
+						</div>
+						<div class="col-md-4">
+							<h3 class="panel-title" style="color: black;">订单处理</h3>
+							<br>
+						<div class="panel-body">
+						    <div class="paper">
+						     <div style="float:left;width: 40px;height: 40px;margin-right: 10px;">
+							<img src="assets/img/user.png" class="img-circle" alt="Avatar" style="width: 35px;height: 35px;">
+						    </div>
+						    <div class="wenzi" style="margin-bottom: 20px;">
+						    	  <h3 class="panel-title" style="padding-bottom: 5px;">张泽辉</h3> 
+						    	  <h3 class="panel-title" style="font-size: 12px;">柜台发起流程</h3> 
+						    </div>
+							
+							</div>	
+							<div style="margin-bottom: 20px;">
+                                  <h3 class="panel-title" style="">订单类型</h3>
+                                  <h3 class="panel-title" style="font-size: 13px;">付款申请</h3>
+                           </div>
+                         <br>
+
+                             <h3 class="panel-title" style="font-size: 12px;">选择处理方</h3>
+                      <input type="radio" name="RadioGrou" value="ok3" id="ok3" checked="checked"  style="margin-right:3px;margin-bottom: 10px;" /> 店长
+		                    <div class="row" style="padding-left: 20px;width: 350px;">
+										<div class="input-field">
+											<input id="passport" type="text" class="validate" >
+											<label for="passport" id="passportlabel" class="tran">申请意见</label>
+
+										</div>
+									</div>
+									<div class="row" style="padding-left: 20px;width: 350px;">
+										<div class="input-field">
+											<input id="client_name" type="text" class="validate" >
+											<label for="client_name" id="client_namelabel" class="tran">备注</label>
+										</div>
+									</div>
+							 <button type="button" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;margin-top: 120px;margin-top:120px;margin-left:100px;" >提交申请</button>
+						
+							</div>
+						</div>
+            </div>
+
+                   <div id="success" style="display: none;">
+                	<div class="titleq" style="width: 750px;margin-bottom: 35px;">
+
+						<h3 class="panel-title" style="font-size: 16px;width: 750px;">我的仪表盘>待办事项><span style="color: blue;">订单处理</span>
+						 <button type="button" id="paper11" onclick="bCheck7()" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;float: right;" >返回</button></h3> 
+                       </div>
+						<div class="col-md-6">
+							<br>
+							<h3 class="panel-title">#324876573342438905-张伟</h3> 
+							<br>
+							<h3 class="panel-title" style="color: black;">当前状态：审批成功</h3> 
+							<br>
+							<br>
+						<div style="height: 700px;">
+						<div class="leftarea" style="float: left;margin-right: 20px;">
+							<h3 class="panel-title" style="color: black;">客户信息</h3>
+							<br>
+							<h3 class="panel-title">客户姓名：张伟</h3> 
+							<br>
+							<h3 class="panel-title">护照号：G35281955</h3> 
+							<br>
+							<h3 class="panel-title">办理类型：</h3> 
+							<br>
+                            <h3 class="panel-title">代办人材料</h3> 
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="panel-title" style="color: black;">收款人信息</h3>
+							<br>
+                            <h3 class="panel-title">账户名：张伟</h3> 
+                            <br>
+                            <h3 class="panel-title">账号：119992890451923</h3> 
+                            <br>
+                            <h3 class="panel-title">开户行：掌上银行北京丰台科技园区支行</h3> 
+                            <br>
+                               <h3 class="panel-title">汇款方式：转账汇款</h3> 
+                            <br>
+                            	<h3 class="panel-title" style="color: black;">退税信息</h3>
+							<br>
+							<h3 class="panel-title">退税单号：#384876573342431203</h3> 
+							<br>
+							
+							<h3 class="panel-title">小票数量：3</h3> 
+							<br>
+                            <h3 class="panel-title">退税资料</h3> 
+                            <br>
+                            <br>
+                            <br>
+                          </div>
+                        <div class="rightarea">
+                        	<h3 class="panel-title" style="color: black;">订单信息</h3>
+							<br>
+							<h3 class="panel-title">退税方式：授权退税</h3> 
+							<br>
+							<h3 class="panel-title">退税公司：GTF</h3> 
+							<br>
+							<h3 class="panel-title">海关章国家：</h3> 
+							<br>
+							<h3 class="panel-title">退税国家：斯洛文尼亚</h3> 
+							<br>
+							<h3 class="panel-title">购买金额：984</h3> 
+							<br>
+							<h3 class="panel-title">优惠活动：银联免手续费</h3> 
+							<br>
+							<h3 class="panel-title">手续费：0</h3> 
+							<br>
+							<h3 class="panel-title">应付金额：976</h3> 
+							<br>
+							<h3 class="panel-title">仪器校验：Y</h3> 
+							<br>
+							<h3 class="panel-title">授权原因：店面无权办理</h3> 
+							<br>
+						
+								<label for="accountname" id="accountnamelabel" class="tran">备注</label>
+						
+                           
+                         </div>
+                        </div>
+	            	<center><button type="button" id="bianji" onclick="binji()" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;" >编辑</button></center>
+						</div>
+						<div class="col-md-3">
+						</div>
+						<div class="col-md-4">
+							<h3 class="panel-title" style="color: black;">订单处理</h3>
+							<br>
+						<div class="panel-body">
+						    <div class="paper">
+						     <div style="float:left;width: 40px;height: 40px;margin-right: 10px;">
+							<img src="assets/img/user.png" class="img-circle" alt="Avatar" style="width: 35px;height: 35px;">
+						    </div>
+						    <div class="wenzi" style="margin-bottom: 20px;">
+						    	  <h3 class="panel-title" style="padding-bottom: 5px;">张泽辉</h3> 
+						    	  <h3 class="pa nel-title" style="font-size: 12px;">柜台发起流程</h3> 
+						    </div>
+							
+							</div>	
+							<div style="margin-bottom: 20px;">
+                                  <h3 class="panel-title" style="">订单类型</h3>
+                                  <h3 class="panel-title" style="font-size: 13px;">付款申请</h3>
+                           </div>
+                         <br>
+
+                             <h3 class="panel-title" style="font-size: 12px;">选择处理方</h3>
+                      <input type="radio" name="RadioGrou" value="ok3" id="ok3" checked="checked"  style="margin-right:3px;margin-bottom: 10px;" /> 店长
+		                    <div class="row" style="padding-left: 20px;width: 350px;">
+										<div class="input-field">
+											<input id="passport" type="text" class="validate" >
+											<label for="passport" id="passportlabel" class="tran">申请意见</label>
+
+										</div>
+									</div>
+									<div class="row" style="padding-left: 20px;width: 350px;">
+										<div class="input-field">
+											<input id="client_name" type="text" class="validate" >
+											<label for="client_name" id="client_namelabel" class="tran">备注</label>
+										</div>
+									</div>
+							 <button type="button" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;margin-top: 120px;margin-top:120px;margin-left:100px;" >提交申请</button>
+						
+							</div>
+						</div>
+					
+					
+            </div>
+
+
+
+
+				</div>
+				<!-- END MAIN CONTENT -->
+				<div class="write" id="write" style="display: none;margin-left: 20px;display: none;">
+				   <div id="al" style="display: none;">
+					<div class="titleq" style="width: 750px;margin-bottom: 35px;">
+
+						<h3 class="panel-title" style="font-size: 16px;width: 750px;">我的仪表盘>待办事项>订单处理><span style="color:#171C61;">订单编辑</span>
+						 <button type="button" class="btn btn-primary" id="writego" onclick="writego()"style="background-color: #171C61;width: 120px;text-align: center;float: right;" >返回</button></h3> 
+                       </div>
+                       <div style="width: 115px;">
+                         <h3 class="panel-title" id="color1" onclick="checkcolor1()" style="color: #ffffff;width: 55px;height: 20px;line-height:20px;font-size: 12px;float: left;background-color:#171C61;color: white; ">订单编辑</h3> <span>|</span>
+                         <h3 class="panel-title" id="color2" onclick="checkcolor2()" style="width: 55px;height: 20px;line-height:20px;font-size: 12px;float: right;color: black;">流程状态</h3> 
+                      </div>
+                 </div>
+                   <div class="all">
+						<div class="col-md-12" id="tab" style="display: none;">
+							<br>
+							<h3 class="panel-title">#324876573342438905-王利民（代办）</h3> 
+							<br>
+							<h3 class="panel-title" style="color: black;">当前状态：付款失败</h3> 
+							<br>
+							<br>
+						<div class="leftarea" style="float: left;margin-right: 20px;">
+							<h3 class="panel-title" style="color: black;">客户信息</h3>
+							<br>
+							<h3 class="panel-title">客户姓名：王利民</h3> 
+							<br>
+							<h3 class="panel-title">护照号：G35286591</h3> 
+							<br>
+							<h3 class="panel-title">办理类型：代办</h3> 
+							<br>
+                            <h3 class="panel-title">代办人材料</h3> 
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="panel-title" style="color: black;">收款人信息</h3>
+							<br>
+                            <h3 class="panel-title">账户名：王小二</h3> 
+                            <br>
+                            <h3 class="panel-title">账号：119992830981923</h3> 
+                            <br>
+                            <h3 class="panel-title">开户行：掌上银行北京丰台科技园区支行</h3> 
+                            <br>
+                               <h3 class="panel-title">汇款方式：转账汇款</h3> 
+                            <br>
+                            	<h3 class="panel-title" style="color: black;">退税信息</h3>
+							<br>
+							<h3 class="panel-title">退税单号：#384876573342432342</h3> 
+							<br>
+							
+							<h3 class="panel-title">小票数量：3</h3> 
+							<br>
+                            <h3 class="panel-title">退税资料</h3> 
+                            <br>
+                            <br>
+                            <br>
+                          </div>
+                        <div class="rightarea" style="height: 730px;">
+                        	<h3 class="panel-title" style="color: black;">订单信息</h3>
+							<br>
+							<h3 class="panel-title">退税方式：授权退税</h3> 
+							<br>
+							<h3 class="panel-title">退税公司：GTF</h3> 
+							<br>
+							<h3 class="panel-title">海关章国家：斯洛文尼亚</h3> 
+							<br>
+							<h3 class="panel-title">退税国家：斯洛文尼亚</h3> 
+							<br>
+							<h3 class="panel-title">购买金额：984</h3> 
+							<br>
+							<h3 class="panel-title">优惠活动：银联免手续费</h3> 
+							<br>
+							<h3 class="panel-title">手续费：0</h3> 
+							<br>
+							<h3 class="panel-title">应付金额：976</h3> 
+							<br>
+							<h3 class="panel-title">仪器校验：Y</h3> 
+							<br>
+							<h3 class="panel-title">授权原因：店面无权办理</h3> 
+							<br>
+						
+								<label for="accountname" id="accountnamelabel" class="tran">备注</label>
+						
+                           
+                         </div>
+                  <div class="footerbutton" >
+					 <button type="button" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;margin-top: 30px;margin-left:50px;float: left;" >保存</button>
+	               <button type="button" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;margin-top: 30px;margin-left:100px;" >取消</button>
+	                 </div>
+
+			</div>
+
+
+
+         <div id="liucheng" style="display: none;">
+                 <div class="tablefull" style="margin-top: 40px;width: 75%;margin-left: 20px;">
+					<div class="table-responsive tableunion">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th class="text-center">序号</th>
+											<th class="text-center">名称</th>
+											<th class="text-center">审批人</th>
+											<th class="text-center">审批时间</th>
+											<th class="text-center">审批意见</th>
+											<th class="text-center">备注</th>
+											
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>柜台发起订单</td>
+											<td>刘晓晓</td>
+											<td>2018-3-20&nbsp;12:21</td>
+											<td>审批申请</td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>柜台完善订单</td>
+											<td>张泽辉</td>
+											<td>2018-3-20&nbsp;12:32</td>
+											<td>订单审批成功</td>
+											<td></td>
+										
+										</tr>
+								
+									</tbody>
+								</table>
+							
+							</div>
+						</div>
+						<center>
+                    	<div class="center-block" style="margin-top: 400px;">
+									<button class="btn butpurple" style="margin-right: 15px;">上一页</button>
+									<button class="btn butpurple">下一页</button>
+					</div>
+					</center>
+           </div>
+				</div>
+					
+						<div class="col-md-3">
+						</div>
+				
+		
+				
+	                 </div>
+
+
+
+
+
+
+
+
+                  <div id="successok" style="display: none;">
+                	<div class="titleq" style="width: 750px;margin-bottom: 35px;">
+
+						<h3 class="panel-title" style="font-size: 16px;width: 750px;">我的仪表盘>待办事项><span style="color: blue;">订单处理</span>
+						 <button type="button" id="paper11" onclick="bCheck7()" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;float: right;" >返回</button></h3> 
+                       </div>
+						<div class="col-md-6">
+							<br>
+							<h3 class="panel-title">#324876573342438905-王利民（代办）</h3> 
+							<br>
+							<h3 class="panel-title" style="color: black;">当前状态：完善订单</h3> 
+							<br>
+							<br>
+						<div style="height: 700px;">
+						<div class="leftarea" style="float: left;margin-right: 20px;">
+							<h3 class="panel-title" style="color: black;">客户信息</h3>
+							<br>
+							<h3 class="panel-title">客户姓名：王利民</h3> 
+							<br>
+							<h3 class="panel-title">护照号：G35281955</h3> 
+							<br>
+							<h3 class="panel-title">办理类型：</h3> 
+							<br>
+                            <h3 class="panel-title">代办人材料</h3> 
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="panel-title" style="color: black;">收款人信息</h3>
+							<br>
+                            <h3 class="panel-title">账户名：王小二</h3> 
+                            <br>
+                            <h3 class="panel-title">账号：119992890451923</h3> 
+                            <br>
+                            <h3 class="panel-title">开户行：掌上银行北京丰台科技园区支行</h3> 
+                            <br>
+                               <h3 class="panel-title">汇款方式：转账汇款</h3> 
+                            <br>
+                            	<h3 class="panel-title" style="color: black;">退税信息</h3>
+							<br>
+							<h3 class="panel-title">退税单号：#384876573342431203</h3> 
+							<br>
+							
+							<h3 class="panel-title">小票数量：3</h3> 
+							<br>
+                            <h3 class="panel-title">退税资料</h3> 
+                            <br>
+                            <br>
+                            <br>
+                          </div>
+                        <div class="rightarea">
+                        	<h3 class="panel-title" style="color: black;">订单信息</h3>
+							<br>
+							<h3 class="panel-title">退税方式：授权退税</h3> 
+							<br>
+							<h3 class="panel-title">退税公司：GTF</h3> 
+							<br>
+							<h3 class="panel-title">海关章国家：</h3> 
+							<br>
+							<h3 class="panel-title">退税国家：斯洛文尼亚</h3> 
+							<br>
+							<h3 class="panel-title">购买金额：984</h3> 
+							<br>
+							<h3 class="panel-title">优惠活动：银联免手续费</h3> 
+							<br>
+							<h3 class="panel-title">手续费：0</h3> 
+							<br>
+							<h3 class="panel-title">应付金额：976</h3> 
+							<br>
+							<h3 class="panel-title">仪器校验：Y</h3> 
+							<br>
+							<h3 class="panel-title">授权原因：店面无权办理</h3> 
+							<br>
+						
+								<label for="accountname" id="accountnamelabel" class="tran">备注</label>
+						
+                           
+                         </div>
+                        </div>
+	            	<center><button type="button" id="bianji" onclick="sucw()" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;" >编辑</button></center>
+						</div>
+						<div class="col-md-3">
+						</div>
+						<div class="col-md-4">
+							<h3 class="panel-title" style="color: black;">订单处理</h3>
+							<br>
+						<div class="panel-body">
+						    <div class="paper">
+						     <div style="float:left;width: 40px;height: 40px;margin-right: 10px;">
+							<img src="assets/img/user.png" class="img-circle" alt="Avatar" style="width: 35px;height: 35px;">
+						    </div>
+						    <div class="wenzi" style="margin-bottom: 20px;">
+						    	  <h3 class="panel-title" style="padding-bottom: 5px;">张泽辉</h3> 
+						    	  <h3 class="pa nel-title" style="font-size: 12px;">柜台发起流程</h3> 
+						    </div>
+							
+							</div>	
+							<div style="margin-bottom: 20px;">
+                                  <h3 class="panel-title" style="">订单类型</h3>
+                                  <h3 class="panel-title" style="font-size: 13px;">付款申请</h3>
+                           </div>
+                         <br>
+
+                             <h3 class="panel-title" style="font-size: 12px;">选择处理方</h3>
+                      <input type="radio" name="RadioGrou" value="ok3" id="ok3" checked="checked"  style="margin-right:3px;margin-bottom: 10px;" /> 店长
+		                    <div class="row" style="padding-left: 20px;width: 350px;">
+										<div class="input-field">
+											<input id="passport" type="text" class="validate" >
+											<label for="passport" id="passportlabel" class="tran">申请意见</label>
+
+										</div>
+									</div>
+									<div class="row" style="padding-left: 20px;width: 350px;">
+										<div class="input-field">
+											<input id="client_name" type="text" class="validate" >
+											<label for="client_name" id="client_namelabel" class="tran">备注</label>
+										</div>
+									</div>
+							 <button type="button" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;margin-top: 120px;margin-top:120px;margin-left:100px;" >提交申请</button>
+						
+							</div>
+						</div>
+					
+					
+            </div>
+
+
+				<div class="writeok" id="writeok" style="display: none;margin-left: 20px;display: none;">
+				   <div id="alok" style="display: none;">
+					<div class="titleq" style="width: 750px;margin-bottom: 35px;">
+
+						<h3 class="panel-title" style="font-size: 16px;width: 750px;">我的仪表盘>待办事项>订单处理><span style="color:#171C61;">订单编辑</span>
+						 <button type="button" class="btn btn-primary" id="writegook" onclick="writegook()"style="background-color: #171C61;width: 120px;text-align: center;float: right;" >返回</button></h3> 
+                       </div>
+                       <div style="width: 115px;">
+                         <h3 class="panel-title" id="color3" onclick="checkcolor1ok()" style="color: #ffffff;width: 55px;height: 20px;line-height:20px;font-size: 12px;float: left;background-color:#171C61;color: white; ">订单编辑</h3> <span>|</span>
+                         <h3 class="panel-title" id="color4" onclick="checkcolor2ok()" style="width: 55px;height: 20px;line-height:20px;font-size: 12px;float: right;color: black;">流程状态</h3> 
+                      </div>
+                 </div>
+                   <div class="all">
+						<div class="col-md-12" id="tabok" style="display: none;">
+							<br>
+							<h3 class="panel-title">#324876573342438905-王利民（代办）</h3> 
+							<br>
+							<h3 class="panel-title" style="color: black;">当前状态：补充信息</h3> 
+							<br>
+							<br>
+						<div class="leftarea" style="float: left;margin-right: 20px;">
+							<h3 class="panel-title" style="color: black;">客户信息</h3>
+							<br>
+							<h3 class="panel-title">客户姓名：王利民</h3> 
+							<br>
+							<h3 class="panel-title">护照号：G35286591</h3> 
+							<br>
+							<h3 class="panel-title">办理类型：代办</h3> 
+							<br>
+                            <h3 class="panel-title">代办人材料</h3> 
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="panel-title" style="color: black;">收款人信息</h3>
+							<br>
+                            <h3 class="panel-title">账户名：王小二</h3> 
+                            <br>
+                            <h3 class="panel-title">账号：119992830981923</h3> 
+                            <br>
+                            <h3 class="panel-title">开户行：掌上银行北京丰台科技园区支行</h3> 
+                            <br>
+                               <h3 class="panel-title">汇款方式：转账汇款</h3> 
+                            <br>
+                            	<h3 class="panel-title" style="color: black;">退税信息</h3>
+							<br>
+							<h3 class="panel-title">退税单号：#384876573342432342</h3> 
+							<br>
+							
+							<h3 class="panel-title">小票数量：3</h3> 
+							<br>
+                            <h3 class="panel-title">退税资料</h3> 
+                            <br>
+                            <br>
+                            <br>
+                          </div>
+                        <div class="rightarea" style="height: 730px;">
+                        	<h3 class="panel-title" style="color: black;">订单信息</h3>
+							<br>
+							<h3 class="panel-title">退税方式：授权退税</h3> 
+							<br>
+							<h3 class="panel-title">退税公司：GTF</h3> 
+							<br>
+							<h3 class="panel-title">海关章国家：斯洛文尼亚</h3> 
+							<br>
+							<h3 class="panel-title">退税国家：斯洛文尼亚</h3> 
+							<br>
+							<h3 class="panel-title">购买金额：984</h3> 
+							<br>
+							<h3 class="panel-title">优惠活动：银联免手续费</h3> 
+							<br>
+							<h3 class="panel-title">手续费：0</h3> 
+							<br>
+							<h3 class="panel-title">应付金额：976</h3> 
+							<br>
+							<h3 class="panel-title">仪器校验：Y</h3> 
+							<br>
+							<h3 class="panel-title">授权原因：店面无权办理</h3> 
+							<br>
+						
+								<label for="accountname" id="accountnamelabel" class="tran">备注</label>
+						
+                           
+                         </div>
+                  <div class="footerbutton" >
+					 <button type="button" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;margin-top: 30px;margin-left:50px;float: left;" >保存</button>
+	               <button type="button" class="btn btn-primary" style="background-color: #171C61;width: 120px;text-align: center;margin-top: 30px;margin-left:100px;" >取消</button>
+	                 </div>
+
+			</div>
+
+
+
+         <div id="liuchengok" style="display: none;">
+                 <div class="tablefull" style="margin-top: 40px;width: 75%;margin-left: 20px;">
+					<div class="table-responsive tableunion">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th class="text-center">序号</th>
+											<th class="text-center">名称</th>
+											<th class="text-center">审批人</th>
+											<th class="text-center">审批时间</th>
+											<th class="text-center">审批意见</th>
+											<th class="text-center">备注</th>
+											
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>柜台发起订单</td>
+											<td>刘晓晓</td>
+											<td>2018-3-20&nbsp;12:21</td>
+											<td>审批申请</td>
+											<td></td>
+										</tr>
+								
+								
+									</tbody>
+								</table>
+							
+							</div>
+						</div>
+						<center>
+                    	<div class="center-block" style="margin-top: 400px;">
+									<button class="btn butpurple" style="margin-right: 15px;">上一页</button>
+									<button class="btn butpurple">下一页</button>
+					</div>
+					</center>
+           </div>
+				</div>
+					
+						<div class="col-md-3">
+						</div>
+				
+		
+				
+	                 </div>
+
+
+
+	      </div>
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+			
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="assets/scripts/klorofil-common.js"></script>
+		<script src="assets/scripts/my.js"></script>
+
+	</body>
+
+	</html>

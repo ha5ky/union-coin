@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>联合货币退税系统</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link rel="stylesheet" href="../assets/css/my.css">
+	<link rel="stylesheet" href="../assets/css/css/build.css">
+	<link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
+	<!-- GOOGLE FONTS -->
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon.png">
+
+	<script src="../assets/vendor/jquery/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("#details").click(function(){
+				$("#showdetails").css('display','');
+				$("#showprocess").css('display','none');
+				$(this).attr('class','bgactive');
+				$("#process").attr('class',' ');
+			});
+			$("#process").click(function(){
+				$("#showprocess").css('display','');
+				$("#showdetails").css('display','none');
+				$(this).attr('class','bgactive');
+				$("#details").attr('class',' ');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="navbar-btn center-block">
+					<button type="button" class="btn-toggle-fullwidth "><i class="fa fa-bars center-block"></i></button>
+				</div>
+			</div>
+			<div class="brand">
+				<a href="index.html"><img src="../assets/img/logo1.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+
+				<div class="navbar-form navbar-left">
+					<h4>公司财务部</h4>
+				</div>
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> </a>
+
+						</li>
+						<li class="dropdown">
+							<a href="#"><i class="glyphicon glyphicon-off"></i><span>退出</span> </a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar" style="box-shadow: 2px 0px 5px 2px #dedada">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav">
+						<li>
+							<a href="#dashboard" data-toggle="collapse" class="collapsed"><i class="glyphicon glyphicon-th-large"></i> <span>我的仪表盘</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="dashboard" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" >待办事项</a></li>
+									<li><a href="page-login.html" class="">已办事项</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#drawback" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>退税业务</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="drawback" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#myreport" data-toggle="collapse" class="collapsed"><i class="fa fa-pie-chart"></i> <span>我的报表</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="myreport" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-exclamation-circle"></i> <span>运营监控</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="drawback.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-dollar"></i> <span>财务管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-users"></i> <span>合作机构</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-cog fa-fw"></i> <span>系统管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+		<!-- MAIN -->
+		<div class="container-fluid">
+			<div class="row" style="position:absolute;left:20%;top:15%;width:50%;">
+				<div class="pull-left" style=" margin-bottom:5%;float:left;"">
+					<button class="btn" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">退税公司配置</button>
+					<button class="btn butpurple" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">优惠方案配置</button>
+					<button class="btn" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">渠道配置</button>
+				</div>
+				<div class="">
+					<div class="pull-right col-md-3 col-md-offset-3" style=" margin-bottom:8px;"">
+						<button class="btn butpurple" data-toggle="modal" data-target="#myModal" style="font-size: 15px;">添加优惠方案</button>
+					</div>
+				</div>
+				<table class="table table-striped">
+					<tr>
+						<td>活动厂商</td>
+						<td>基数</td>
+						<td>优惠金额</td>
+						<td>免手续费</td>
+						<td>操作时间</td>
+						<td>操作</td>
+					</tr>
+					<tr>
+						<td>Visa</td>
+						<td>>=100€</td>
+						<td>100￥</td>
+						<td>√</td>
+						<td>2017-11-22 12:31</td>
+						<td>
+							<a>编辑</a>
+						</td>
+					</tr>
+					<tr>
+						<td>Visa</td>
+						<td>>=0€</td>
+						<td>0￥</td>
+						<td>√</td>
+						<td>2017-11-22 12:31</td>
+						<td>
+							<a>编辑</a>
+						</td>
+					</tr>
+					<tr>
+						<td>Visa</td>
+						<td>>=100€</td>
+						<td>0￥</td>
+						<td>√</td>
+						<td>2017-11-22 12:31</td>
+						<td>
+							<a>编辑</a>
+						</td>
+					</tr>
+				</table>
+				<div class="pull-right col-md-1" style="padding-right:40%; margin-top:50px;">
+					<button class="btn butpurple" data-toggle="modal" data-target="#myModal" style="float: left;margin-right:50px;">上一页</button>
+					<button class="btn butpurple" data-toggle="modal" data-target="#myModal">下一页</button>
+				</div>
+			</div>
+		</div>
+		<!-- 模态框 -->
+		<div class="modal fade bs-example-modal-sm"  id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" aria-hidden="true">
+			<div id="modalDialog" class="modal-dialog modal-sm" role="document">
+				<div class="modal-content  modalshadow">
+					<div class="myModal-headerpurple">
+						<h4 class="modal-title" id="myModalLabel" style="font-size: 14px;color: white;"><b>添加优惠活动</b></h4>
+					</div>
+					<div class="myModal-body">
+						<form action="">
+							<div class="row">
+								<div class="input-field">
+									<input id="situation" type="text" class="validate" >
+									<label for="situation" id="situationlabel" class="tran">活动厂商：</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field">
+									<input id="situation" type="text" class="validate" >
+									<label for="situation" id="situationlabel" class="tran">最低优惠金额：</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field">
+									<input id="situation" type="text" class="validate" >
+									<label for="situation" id="situationlabel" class="tran">返现金额：</label>
+								</div>
+							</div>
+							<div class="row" style="margin:8px 0px -15px -35px;font-size:14px;">
+									<label for="situation" id="situationlabel" class="radio-inline">手续费：
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 有
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 无
+										</label>
+									</label>
+							</div>
+							<div class="row">
+								<div class="input-field">
+									<input id="situation" type="text" class="validate" >
+									<label for="situation" id="situationlabel" class="tran">备注：</label>
+								</div>
+							</div>
+							<div class="row" style="margin-top: 10%;">
+								<center>
+									<div class="center-block">
+										<button class="btn butpurple" style="width: 25%;text-align: center;padding: 3px;margin-right:15px;">保存</button>
+										<button class="btn butpurple" style="width: 25%;text-align: center;padding: 3px;margin-left:15px;">取消</button>
+									</div>
+								</center>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END MAIN -->
+		<div class="clearfix"></div>
+		<footer>
+		</footer>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script type="text/javascript" src="../assets/scripts/jquery-ui.min.js"></script>
+		<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="../assets/scripts/klorofil-common.js"></script>
+		<script src="../assets/scripts/my.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#modalDialog").draggable({
+					handle: '.myModal-header'
+				});
+			});
+		</script>
+	</body>
+
+	</html>

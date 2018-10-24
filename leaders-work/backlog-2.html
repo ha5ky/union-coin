@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>联合货币退税系统</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link rel="stylesheet" href="../assets/css/my.css">
+	<link rel="stylesheet" href="../assets/css/css/build.css">
+	<!-- GOOGLE FONTS -->
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon.png">
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="navbar-btn center-block">
+					<button type="button" class="btn-toggle-fullwidth "><i class="fa fa-bars center-block"></i></button>
+				</div>
+			</div>
+			<div class="brand">
+				<a href="index.html"><img src="../assets/img/logo1.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+
+				<div class="navbar-form navbar-left">
+					<h4>公司领导</h4>
+				</div>
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> </a>
+
+						</li>
+						<li class="dropdown">
+							<a href="#"><i class="glyphicon glyphicon-off"></i><span>退出</span> </a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar" style="box-shadow: 2px 0px 5px 2px #dedada">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav">
+						<li>
+							<a href="#dashboard" data-toggle="collapse" class="collapsed"><i class="glyphicon glyphicon-th-large"></i> <span>我的仪表盘</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="dashboard" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" >待办事项</a></li>
+									<li><a href="page-login.html" class="">已办事项</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#drawback" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>退税业务</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="drawback" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#myreport" data-toggle="collapse" class="collapsed"><i class="fa fa-pie-chart"></i> <span>我的报表</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="myreport" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-exclamation-circle"></i> <span>运营监控</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="drawback.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-dollar"></i> <span>财务管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-users"></i> <span>合作机构</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-cog fa-fw"></i> <span>系统管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+		<!-- MAIN -->
+		<div class="main">
+			<!-- MAIN CONTENT -->
+			<div class="main-content">
+				<div class="container-fluid">
+
+					<h2 class="page-title">收支对比表</h2>
+					<div class="row" style="margin-top: 1%;margin-left: 10px;">
+						<div id="date" class="nointervaldiv">
+							<label for="">年度：</label>
+							<select name="year" id="year" class="nointervaldrop">
+								<option value="">2018</option>
+							</select>
+							<select name="month" id="month" class="nointervaldrop" style="margin-left: -5px;">
+								<option value="" style="margin-left: 3px;">08</option>
+							</select>
+							<label for="" style="margin-left: 40px;">退税公司：</label>
+							<select name="" id=""  class="nointervaldrop" style="width: auto;">
+								<option value="">GTF</option>
+								<option value="">111</option>
+								<option value=""></option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="">
+							<label for="" style="margin-top: 3%;">下载：</label>
+							<img style="margin-left: 2.5%;" src="../assets/img/download.png" alt="">
+						</div>
+					</div>
+					<!--  End  Striped Rows Table  -->
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+			<footer>
+
+			</footer>
+		</div>
+	</div>
+	<!-- END WRAPPER -->
+	<!-- Javascript -->
+	<script src="../assets/vendor/jquery/jquery.min.js"></script>
+	<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="../assets/scripts/klorofil-common.js"></script>
+	<script src="../assets/scripts/my.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#date").selectDate()
+
+			$("#days").focusout(function(){
+				var year = $("#year option:selected").html()
+				var month = $("#month option:selected").html()
+				var day = $("#days option:selected").html()
+				console.log(year+month+day)
+			})
+
+		})
+
+	</script>
+</body>
+
+</html>

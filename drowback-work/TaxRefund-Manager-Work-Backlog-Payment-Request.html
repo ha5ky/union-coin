@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>联合货币退税系统</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link rel="stylesheet" href="../assets/css/my.css">
+	<link rel="stylesheet" href="../assets/css/css/build.css">
+	<link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
+	<!-- GOOGLE FONTS -->
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon.png">
+
+	<script src="../assets/vendor/jquery/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("#details").click(function(){
+				$("#showdetails").css('display','');
+				$("#showprocess").css('display','none');
+				$(this).attr('class','bgactive');
+				$("#process").attr('class',' ');
+			});
+			$("#process").click(function(){
+				$("#showprocess").css('display','');
+				$("#showdetails").css('display','none');
+				$(this).attr('class','bgactive');
+				$("#details").attr('class',' ');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="navbar-btn center-block">
+					<button type="button" class="btn-toggle-fullwidth "><i class="fa fa-bars center-block"></i></button>
+				</div>
+			</div>
+			<div class="brand">
+				<a href="index.html"><img src="../assets/img/logo1.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+
+				<div class="navbar-form navbar-left">
+					<h4>公司财务部</h4>
+				</div>
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href=""><span class="badge" style="color: #ffffff;background-color: red;width: 100%;">4</span></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> </a>
+
+						</li>
+						<li class="dropdown">
+							<a href="#"><i class="glyphicon glyphicon-off"></i><span>退出</span> </a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar" style="box-shadow: 2px 0px 5px 2px #dedada">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav">
+						<li>
+							<a href="#dashboard" data-toggle="collapse" class="collapsed"><i class="glyphicon glyphicon-th-large"></i> <span>我的仪表盘</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="dashboard" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" >待办事项</a></li>
+									<li><a href="page-login.html" class="">已办事项</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#drawback" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>退税业务</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="drawback" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#myreport" data-toggle="collapse" class="collapsed"><i class="fa fa-pie-chart"></i> <span>我的报表</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="myreport" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-exclamation-circle"></i> <span>运营监控</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="drawback.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-dollar"></i> <span>财务管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-users"></i> <span>合作机构</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-cog fa-fw"></i> <span>系统管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+		<!-- MAIN -->
+		<div class="main">
+			<!-- MAIN CONTENT -->
+			<div class="main-content">
+				<div class="container-fluid">
+					<h3 class="page-title">代办事项</h3>
+					<div class="row" style="margin-top: 1%;margin-left: 10px;">
+						<div class="col-md-7">
+							<label for="">审批状态：</label>
+							<select name="" id=""  class="nointervaldrop" style="width: auto;">
+								<option value="">全部</option>
+								<option value="">授权审批</option>
+								<option value="">付款请求</option>
+								<option value=""></option>
+								<option value=""></option>
+							</select>
+						</div>
+						
+					</div>
+					<div class="row" style="margin-top: 1%;">
+						<div class="col-md-11 center-block">
+							<div class="table-responsive tableunion">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th class="text-center">序号</th>
+											<th class="text-center">退税单号</th>
+											<th class="text-center">退税类型</th>
+											<th class="text-center">退税公司</th>
+											<th class="text-center">状态</th>
+											<th class="text-center">操作</th>											
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>Mark</td>
+											<td>Otto</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+											<td>@mdo</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pull-right" style="margin-top: 400px;margin-right: 20%;">
+								<button class="btn butpurple" style="margin-right: 15px;">上一页</button>
+								<button class="btn butpurple">下一页</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 模态框 -->
+	<div class="modal fade bs-example-modal-sm"  id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" aria-hidden="true">
+		<div id="modalDialog" class="modal-dialog modal-sm" role="document">
+			<div class="modal-content  modalshadow">
+				<div class="myModal-header">
+					<h4 class="modal-title" id="myModalLabel" style="text-align: center;font-size: 10px;"><b>批量处理</b></h4>
+				</div>
+				<div class="myModal-body">
+					<form action="">
+						<div class="row">
+							<div class="input-field">
+								<input id="situation" type="text" class="validate" >
+								<label for="situation" id="situationlabel" class="tran">付款情况：</label>
+							</div>
+						</div>
+						<div class="row" style="margin-top: -20px;">
+							<div class="input-field">
+								<input id="bank" type="hidden" class="validate" >
+								<label for="" class="">付款失败截图</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field">
+								<div class="fileup" style="text-align: center;">
+									<i class="glyphicon glyphicon-plus-sign" style="font-size: 40px;">
+										<input type="file" class="input-group" value="">
+									</i>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="margin-top: 40%;">
+							<center>
+								<div class="center-block">
+									<button class="btn butyellow" style="width: 80px;text-align: center;padding: 6px 0;">付款成功</button>
+									<button class="btn butgray" style="width: 80px;text-align: center;padding: 6px 0;margin-right: 0px;">付款不成功</button>
+								</div>
+							</center>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  End  Striped Rows Table  -->
+	<!-- END MAIN CONTENT -->
+	<!-- END MAIN -->
+	<div class="clearfix"></div>
+	<footer>
+	</footer>
+	<!-- END WRAPPER -->
+	<!-- Javascript -->
+	<script type="text/javascript" src="../assets/scripts/jquery-ui.min.js"></script>
+	<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="../assets/scripts/klorofil-common.js"></script>
+	<script src="../assets/scripts/my.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#modalDialog").draggable({
+				handle: '.myModal-header'
+			});
+		});
+	</script>
+</body>
+
+</html>

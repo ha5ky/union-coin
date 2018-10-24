@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>联合货币退税系统</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link rel="stylesheet" href="../assets/css/my.css">
+	<link rel="stylesheet" href="../assets/css/css/build.css">
+	<link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="../assets/select/css/prettify.css">
+	<!-- GOOGLE FONTS -->
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon.png">
+
+	<script src="../assets/vendor/jquery/jquery.min.js"></script>
+	<script src="../assets/select/js/prettify.js" type="text/javascript"></script>
+	<script src="../assets/select/js/mockjax.js" type="text/javascript"></script>
+	<script src="../assets/select/js/bootstrap-typeahead.js" type="text/javascript"></script>
+	<script src="../assets/select/js/demo.js" type="text/javascript"></script>
+	<script>
+		$(function(){
+			$("#details").click(function(){
+				$("#showdetails").css('display','');
+				$("#showprocess").css('display','none');
+				$(this).attr('class','bgactive');
+				$("#process").attr('class',' ');
+			});
+			$("#process").click(function(){
+				$("#showprocess").css('display','');
+				$("#showdetails").css('display','none');
+				$(this).attr('class','bgactive');
+				$("#details").attr('class',' ');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="navbar-btn center-block">
+					<button type="button" class="btn-toggle-fullwidth "><i class="fa fa-bars center-block"></i></button>
+				</div>
+			</div>
+			<div class="brand">
+				<a href="index.html"><img src="../assets/img/logo1.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+
+				<div class="navbar-form navbar-left">
+					<h4>公司财务部</h4>
+				</div>
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href=""><span class="badge" style="color: #ffffff;background-color: red;width: 100%;">4</span></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> </a>
+
+						</li>
+						<li class="dropdown">
+							<a href="#"><i class="glyphicon glyphicon-off"></i><span>退出</span> </a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar" style="box-shadow: 2px 0px 5px 2px #dedada">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav">
+						<li>
+							<a href="#dashboard" data-toggle="collapse" class="collapsed"><i class="glyphicon glyphicon-th-large"></i> <span>我的仪表盘</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="dashboard" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" >待办事项</a></li>
+									<li><a href="page-login.html" class="">已办事项</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#drawback" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>退税业务</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="drawback" class="collapse ">
+								<ul class="nav">
+									<li><a href="#" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#myreport" data-toggle="collapse" class="collapsed"><i class="fa fa-pie-chart"></i> <span>我的报表</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="myreport" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-exclamation-circle"></i> <span>运营监控</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="drawback.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-dollar"></i> <span>财务管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-users"></i> <span>合作机构</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-cog fa-fw"></i> <span>系统管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+							<div id="tuishui" class="collapse ">
+								<ul class="nav">
+									<li><a href="page-profile.html" class="">办理退税</a></li>
+									<li><a href="page-login.html" class="">退税流程单管理</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+		<!-- MAIN -->
+		<div class="main">
+			<!-- MAIN CONTENT -->
+			<div class="main-content">
+				<div class="container-fluid">
+					<h3 class="page-title">财务调整</h3>
+					
+					<div class="row">
+						<input id="demo1" type="" class="searchinput pull-left" placeholder="Search cities..." autocomplete="off" style="margin-left: 18px;margin-top: 1.5%;" />
+						<div class="previewdiv ser col-md-7" style="padding-bottom: 6%;margin-left: 10%;">
+							<h3 class="panel-title" style="margin-top: 3%;font-size: 9px;color: #90909090;width: 200px;">详情：授权退税流程</h3>
+							<h3 class="panel-title" style="margin-top: 3%;width: 300px;">#324876573342438905-王利民</h3>
+							<h3 class="panel-title" style="color: black;margin-top: 3%;width: 200px;"><b>当前状态：已完成</b></h3> 
+							<div class="col-md-4" style="margin-top: 5%;">
+								<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">类别</label><br>授权退税</h3>
+								<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;">
+									<img src="../assets/img/user1.png" class="img-circle pull-right" style="margin-left: 8%;height: 40px;" alt="">
+									<label for="" class="labelgray">退税公司</label>
+									<br>GTF
+								</h3>
+								<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">退税国家</label><br>斯洛文尼亚</h3>
+								<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">购买金额</label><br>€&nbsp;5000</h3>
+								<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">优惠信息</label><br>退税满返：¥&nbsp;100</h3>
+								<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">收款方式</label><br>银行汇款</h3>
+								<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">退税申请表号</label><br>#324876573342438905</h3>
+								<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">退税资料</label>
+									<div class="previewthumb">
+										<img class="previewpic" src="../assets/img/user1.png" alt="">
+										<img class="previewpic" src="../assets/img/user2.png" alt="">
+									</div>
+								</h3>
+							</div>
+							<div class="rightarea col-md-5" style="float: left;margin-left: 10%;margin-top: -25px;">
+								<h3 class="panel-title" style="color: black;margin-top: 3%;"><b>客户信息</b></h3>
+								<div style="margin-top: 13%;padding-left: 5%;">
+									<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">客户类别</label><br>代办</h3>
+									<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">护照号</label><br>G35281955</h3>
+									<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">客户姓名</label><br>张伟</h3>
+									<h3 class="panel-title">代办人材料</h3> 
+									<div class="previewthumb">
+										<img class="previewpic" src="../assets/img/user1.png" alt="">
+										<img class="previewpic" src="../assets/img/user2.png" alt="">
+									</div>
+									<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">客户姓名</label><br>王小二</h3>
+									<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">账号</label><br>119992890451923</h3>
+									<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">开户行</label><br>掌上银行北京丰台科技园区支行</h3>
+									<h3 class="panel-title" style="height: 60px;color: black;margin-top: 2%;"><label for="" class="labelgray">退税国家</label><br>斯洛文尼亚</h3>
+								</div>
+							</div>
+							<center>
+								<div class="center-block" style="">
+									<button class="btn butyellow">调整</button>
+								</div>
+							</center>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!--  End  Striped Rows Table  -->
+			<!-- END MAIN CONTENT -->
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+			<footer>
+			</footer>
+			<!-- END WRAPPER -->
+			<!-- Javascript -->
+			<script type="text/javascript" src="../assets/scripts/jquery-ui.min.js"></script>
+			<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+			<script src="../assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+			<script src="../assets/scripts/klorofil-common.js"></script>
+			<script src="../assets/scripts/my.js"></script>
+			<script type="text/javascript" src="../assets/select/dist/js/bootstrap-select.min.js"></script>
+			<script type="text/javascript">
+				$(function(){
+					$("#modalDialog").draggable({
+						handle: '.myModal-header'
+					});
+				});
+			</script>
+		</body>
+
+		</html>

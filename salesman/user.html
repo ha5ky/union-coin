@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>联合货币退税系统</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="../assets/vendor/chartist/css/chartist-custom.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="../assets/css/demo.css">
+	<link rel="stylesheet" href="../assets/css/my.css">
+	<link rel="stylesheet" href="../assets/css/css/build.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon.png">
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="navbar-btn center-block">
+					<button type="button" class="btn-toggle-fullwidth "><i class="fa fa-bars center-block"></i></button>
+				</div>
+			</div>
+			<div class="brand">
+				<a href="index.html"><img src="../assets/img/logo1.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+				
+				<div class="navbar-form navbar-left">
+					<!-- <div class="input-group"> -->
+						<!-- <input type="text" value="" class="form-control" placeholder="北京"> -->
+						<h4>北京首都机场T3E国际出发店</h4>
+						<!-- </div> -->
+					</div>
+					<div id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../assets/img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> </a>
+
+							</li>
+							<li class="dropdown">
+								<a href="#"><i class="glyphicon glyphicon-off"></i><span>退出</span> </a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- END NAVBAR -->
+			<!-- LEFT SIDEBAR -->
+			<div id="sidebar-nav" class="sidebar" style="box-shadow: 2px 0px 5px 2px #dedada">
+				<div class="sidebar-scroll">
+					<nav>
+						<ul class="nav">
+							<li>
+								<a href="#dashboard" data-toggle="collapse" class="collapsed"><i class="glyphicon glyphicon-th-large"></i> <span>我的仪表盘</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+								<div id="dashboard" class="collapse ">
+									<ul class="nav">
+										<li><a href="../accounting-work/accounting-work/backlog.html" >待办事项</a></li>
+										<li><a href="page-login.html" class="">已办事项</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#drawback" data-toggle="collapse" class=""><i class="fa fa-paper-plane-o"></i> <span>退税业务</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+								<div id="drawback" class="collapse in">
+									<ul class="nav">
+										<li><a href="#" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#myreport" data-toggle="collapse" class="collapsed"><i class="fa fa-pie-chart"></i> <span>我的报表</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+								<div id="myreport" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-exclamation-circle"></i> <span>运营监控</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="drawback.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-dollar"></i> <span>财务管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-users"></i> <span>合作机构</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#tuishui" data-toggle="collapse" class="collapsed"><i class="fa fa-cog fa-fw"></i> <span>系统管理</span> <i class="icon-submenu fa fa-angle-left"></i></a>
+								<div id="tuishui" class="collapse ">
+									<ul class="nav">
+										<li><a href="page-profile.html" class="">办理退税</a></li>
+										<li><a href="page-login.html" class="">退税流程单管理</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- END LEFT SIDEBAR -->
+			<!-- MAIN -->
+			<div class="main">
+				<!-- MAIN CONTENT -->
+				<div class="main-content">
+					<div class="container-fluid">
+						
+						<h2 class="page-title">办理退税</h2>
+						<div class="col-md-3">
+							<h3 class="panel-title">用户信息</h3> 
+							<br>
+							<div class="panel-body">
+								<form class="">
+									<div class="row">
+										<div class="input-field">
+											<input id="passport" type="text" class="validate" >
+											<label for="passport" id="passportlabel" class="tran">护照号</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="client_name" type="text" class="validate" >
+											<label for="client_name" id="client_namelabel" class="tran">客户姓名</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="tel" type="text" class="validate" >
+											<label for="tel" class="tran" id="tellabel">联系电话</label>
+										</div>
+									</div>
+								</form>
+							</div>
+							<h3 class="panel-title">账户信息</h3>
+							<br>
+							<div class="panel-body">
+								<form class="">
+									<div class="row">
+										<div class="input-field">
+											<input id="accountname" type="text" class="validate" >
+											<label for="accountname" id="accountnamelabel" class="tran">账户名</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="bank" type="text" class="validate" >
+											<label for="bank" id="banklabel" class="tran">开户行</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="account" type="text" class="validate" >
+											<label for="account" class="tran" id="accountlabel">账号</label>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<h3 class="panel-title">代办信息</h3>
+							<br>
+							<div class="panel-body">
+								<form class="form">
+									<div class="row">
+										<div class="input-field">
+											<label for="" class="active">是否为代办</label>
+											<div class="checkbox checkbox-primary">
+												<input id="checkbox2" class="styled" type="checkbox" checked>
+												<label for="checkbox2">
+													代办机构/代办人办理
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<input id="bank" type="hidden" class="validate" >
+											<label for="" class="">代办人材料</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field">
+											<div class="fileup">
+												<i class="glyphicon glyphicon-plus-sign">
+													<input type="file" class="input-group" value="">
+												</i>
+												<i class="glyphicon glyphicon-plus-sign">
+													<input type="file" class="input-group" value="">
+												</i>
+												<i class="glyphicon glyphicon-plus-sign">
+													<input type="file" class="input-group" value="">
+												</i>
+												<i class="glyphicon glyphicon-plus-sign">
+													<input type="file" class="input-group" value="">
+												</i>
+												<i class="glyphicon glyphicon-plus-sign">
+													<input type="file" class="input-group" value="">
+												</i>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<br>
+										<label for="" class="">渠道信息</label>
+										<div class="input-field">
+											<select class="dropsel">
+												<option>1</option>
+												<option value=""></option>
+												<option value=""></option>
+												<option value=""></option>
+											</select>
+										</div>
+										
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END MAIN CONTENT -->
+			</div>
+			<!-- END MAIN -->
+			<div class="clearfix"></div>
+			<footer>
+
+			</footer>
+		</div>
+		<!-- END WRAPPER -->
+		<!-- Javascript -->
+		<script src="../assets/vendor/jquery/jquery.min.js"></script>
+		<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="../assets/scripts/klorofil-common.js"></script>
+		<script src="../assets/scripts/my.js"></script>
+	</body>
+
+	</html>
